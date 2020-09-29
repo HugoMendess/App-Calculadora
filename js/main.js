@@ -46,19 +46,14 @@ function pegaInput(idOpcao){
 			document.getElementById("resultado-mostra").value = 0;
 		}
 
-
+		
 	}
 
-	
-}
-
-function pegaInputNum(idOpcao){
-	var num = document.getElementById(idOpcao).value;
-	if(num == '0'){
+	if(op == '0'){
 
 		if(parseFloat(document.getElementById("resultado-mostra").value) == 0){
 		
-			document.getElementById("resultado-mostra").value = num;
+			document.getElementById("resultado-mostra").value = op;
 		}
 
 		else{
@@ -67,123 +62,125 @@ function pegaInputNum(idOpcao){
 		
 	}
 
-	if(num == '1'){
+	if(op == '1'){
 
 		if(document.getElementById("resultado-mostra").value == 0){
-			document.getElementById("resultado-mostra").value = num;
+			document.getElementById("resultado-mostra").value = op;
 		}
 
 		else{
-			numero1 = parseFloat(num);
-			document.getElementById("resultado-mostra").value = document.getElementById("resultado-mostra").value +num;
+			numero1 = parseFloat(op);
+			document.getElementById("resultado-mostra").value = document.getElementById("resultado-mostra").value +op;
 		}
 		
 	}
 
 
-	if(num == '2'){
+	if(op == '2'){
 
 		if(document.getElementById("resultado-mostra").value == 0){
-			document.getElementById("resultado-mostra").value = num;
+			document.getElementById("resultado-mostra").value = op;
 		}
 
 		else{
-			numero2 = parseFloat(num);
-			document.getElementById("resultado-mostra").value = document.getElementById("resultado-mostra").value +num;
+			numero2 = parseFloat(op);
+			document.getElementById("resultado-mostra").value = document.getElementById("resultado-mostra").value +op;
 		}
 		
 	}
 
 
-	if(num == '3'){
+	if(op == '3'){
 
 		if(document.getElementById("resultado-mostra").value == 0){
-			document.getElementById("resultado-mostra").value = num;
+			document.getElementById("resultado-mostra").value = op;
 		}
 
 		else{
-			document.getElementById("resultado-mostra").value = document.getElementById("resultado-mostra").value +num;
+			document.getElementById("resultado-mostra").value = document.getElementById("resultado-mostra").value +op;
 		}
 		
 	}
 
 
-	if(num == '4'){
+	if(op == '4'){
 
 		if(document.getElementById("resultado-mostra").value == 0){
-			document.getElementById("resultado-mostra").value = num;
+			document.getElementById("resultado-mostra").value = op;
 		}
 
 		else{
-			document.getElementById("resultado-mostra").value = document.getElementById("resultado-mostra").value +num;
+			document.getElementById("resultado-mostra").value = document.getElementById("resultado-mostra").value +op;
 		}
 		
 	}
 
 
 
-	if(num == '5'){
+	if(op == '5'){
 
 		if(document.getElementById("resultado-mostra").value == 0){
-			document.getElementById("resultado-mostra").value = num;
+			document.getElementById("resultado-mostra").value = op;
 		}
 
 		else{
-			document.getElementById("resultado-mostra").value = document.getElementById("resultado-mostra").value +num;
+			document.getElementById("resultado-mostra").value = document.getElementById("resultado-mostra").value +op;
 		}
 		
 	}
 
 
-	if(num == '6'){
+	if(op == '6'){
 
 		if(document.getElementById("resultado-mostra").value == 0){
-			document.getElementById("resultado-mostra").value = num;
+			document.getElementById("resultado-mostra").value = op;
 		}
 
 		else{
-			document.getElementById("resultado-mostra").value = document.getElementById("resultado-mostra").value +num;
+			document.getElementById("resultado-mostra").value = document.getElementById("resultado-mostra").value +op;
 		}
 		
 	}
 
 
-	if(num == '7'){
+	if(op == '7'){
 
 		if(document.getElementById("resultado-mostra").value == 0){
-			document.getElementById("resultado-mostra").value = num;
+			document.getElementById("resultado-mostra").value = op;
 		}
 
 		else{
-			document.getElementById("resultado-mostra").value = document.getElementById("resultado-mostra").value +num;
+			document.getElementById("resultado-mostra").value = document.getElementById("resultado-mostra").value +op;
 		}
 		
 	}
 
 
-	if(num == '8'){
+	if(op == '8'){
 
 		if(document.getElementById("resultado-mostra").value == 0){
-			document.getElementById("resultado-mostra").value = num;
+			document.getElementById("resultado-mostra").value = op;
 		}
 
 		else{
-			document.getElementById("resultado-mostra").value = document.getElementById("resultado-mostra").value +num;
+			document.getElementById("resultado-mostra").value = document.getElementById("resultado-mostra").value +op;
 		}
 		
 	}
 
 
-	if(num == '9'){
+	if(op == '9'){
 
 		if(document.getElementById("resultado-mostra").value == 0){
-			document.getElementById("resultado-mostra").value = num;
+			document.getElementById("resultado-mostra").value = op;
 		}
 
 		else{
-			document.getElementById("resultado-mostra").value = document.getElementById("resultado-mostra").value +num;
+			document.getElementById("resultado-mostra").value = document.getElementById("resultado-mostra").value +op;
 		}
 		
 	}
+
+	
 
 }
