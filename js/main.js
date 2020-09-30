@@ -1,52 +1,28 @@
 // Código Javascript
 
 
-var mult = false;
-var soma = false;
-var div = false;
-var sub = false;
-var numero1;
-var numero2;
-
 
 function pegaInput(idOpcao){
 	var op = document.getElementById(idOpcao).value;
+
+	
 
 	if(op == 'C'){
 		document.getElementById("resultado-mostra").value = "0";
 	}
 
-	if(op == '/' && document.getElementById("resultado-mostra").value != 0){
-
-		document.getElementById("resultado-mostra").value = document.getElementById("resultado-mostra").value +op;
+	if(op === '+' || op === '-' || op === "*" || op === "/" || op === "."){
+		document.getElementById("resultado-mostra").value = document.getElementById("resultado-mostra").value +" " +op+" ";
 	}
-
-	if(op == '*'){
 	
-		document.getElementById("resultado-mostra").value = document.getElementById("resultado-mostra").value +' '+op+' ';
-	}
 
-	if(op == '+'){
-		soma = true;
-
-		document.getElementById("resultado-mostra").value = document.getElementById("resultado-mostra").value +' '+op+' ';
-	}
-
-	if(op == '.'){
-		document.getElementById("resultado-mostra").value = document.getElementById("resultado-mostra").value +''+op;
-	}
-
-	if(op == '-'){
-		document.getElementById("resultado-mostra").value = document.getElementById("resultado-mostra").value +''+op;
-	}
-
-	if(op == '='){
+	if(op == '=' && document.getElementById("resultado-mostra").value != 0){
 
 		if(parseFloat(document.getElementById("resultado-mostra").value) == 0){
 			document.getElementById("resultado-mostra").value = 0;
 		}
 
-		
+
 	}
 
 	if(op == '0'){
