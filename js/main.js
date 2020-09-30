@@ -21,8 +21,8 @@ function pegaInput(idOpcao){
 	}
 	
 	if(op === "="){
-		var valor_campo = document.getElementById("resultado-mostra").value;
-		console.log(valor_campo);
+		var valor_campo = eval(document.getElementById("resultado-mostra").value);
+		document.getElementById("resultado-mostra").value = valor_campo;
 	}
 
 
