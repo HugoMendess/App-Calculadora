@@ -11,19 +11,20 @@ function pegaInput(idOpcao){
 		document.getElementById("resultado-mostra").value = "0";
 	}
 
-	if(op === '+' || op === '-' || op === "*" || op === "/" || op === "."){
-		document.getElementById("resultado-mostra").value = document.getElementById("resultado-mostra").value +" " +op+" ";
+	if(op === '+' || op === '-' || op === "*" || op === "/"){
+		document.getElementById("resultado-mostra").value = document.getElementById("resultado-mostra").value + " "+op+" ";
+	}
+
+	if(op === "."){
+
+		document.getElementById("resultado-mostra").value = document.getElementById("resultado-mostra").value + op;
 	}
 	
-
-	if(op == '=' && document.getElementById("resultado-mostra").value != 0){
-
-		if(parseFloat(document.getElementById("resultado-mostra").value) == 0){
-			document.getElementById("resultado-mostra").value = 0;
-		}
-
-
+	if(op === "="){
+		var valor_campo = document.getElementById("resultado-mostra").value;
+		console.log(valor_campo);
 	}
+
 
 	if(op == '0'){
 
